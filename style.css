@@ -1,0 +1,364 @@
+/*
+Theme Name: banana-blog
+Version: 1.0
+*/
+
+html, body{
+  width: 100%;
+  height: 100%;
+}
+body{
+  margin: 0;
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  background-color: #f4f9ea;
+  color: #555;
+}
+h1,h2,h3,h4,h5{
+  margin: 0;
+}
+a{
+  color: #316eb6;
+  text-decoration: none
+}
+a:hover{
+  color: #1d487b;
+}
+ul{
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+.clear{
+  clear: both;
+}
+.content{
+  width: 980px;
+  margin: 0 auto;
+}
+.top-nav{
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(top, #856727 0%, #6A511F 100%);
+  /* Opera */
+  background-image: -o-linear-gradient(top, #856727 0%, #6A511F 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #856727), color-stop(1, #6A511F));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(top, #856727 0%, #6A511F 100%);
+  /* W3C Markup, IE10 Release Preview */
+  background-image: linear-gradient(to bottom, #856727 0%, #6A511F 100%);
+  box-shadow: 0px -2px 3px rgba(52,85,43,0.8);
+}
+.top-nav ul{
+  height: 60px;
+  position: relative
+}
+.top-nav li{
+  float: left;
+}
+.top-nav li.list-border{
+  width: 2px;
+  background-color: rgba(49,25,0,0.7);
+  display: block;
+  height: 60px;
+  border-right: 1px solid #fff;
+  opacity: 0.5;
+}
+.top-nav li.logo img{
+  width: 130px;
+}
+.top-nav .nav-logo{
+  width: 160px;
+  padding: 14px 14px 14px 0px;
+  display: block;
+  text-align: center;
+}
+.top-nav .nav-link{
+  color: white;
+  display: block;
+  width: 160px;
+  font-size: 16px;
+  text-align: center;
+  padding: 18px 0px;
+  opacity: 0.5;
+}
+.top-nav .nav-link:hover{
+  opacity: 1;
+}
+.top-nav .nav-link.active{
+  opacity: 1;
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(bottom, #856727 0%, #6A511F 100%);
+  /* Opera */
+  background-image: -o-linear-gradient(bottom, #856727 0%, #6A511F 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #856727), color-stop(1, #6A511F));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(bottom, #856727 0%, #6A511F 100%);
+  /* W3C Markup, IE10 Release Preview */
+  background-image: linear-gradient(to top, #856727 0%, #6A511F 100%);
+}
+.top-nav.shadow{
+  box-shadow: 0px 3px 3px rgba(52,85,43,0.75);
+  position: relative;
+}
+#dl-menu{
+  display: none;
+  position: absolute;
+  margin-right: 0px;
+  width: auto;
+  right: 0;
+  margin-top: 7px;
+  margin-right: 15px;
+}
+.dl-menuwrapper button{
+  background: transparent;
+  opacity: 0.5;
+}
+.dl-menuwrapper button:hover{
+  background: transparent;
+  opacity: 1;
+}
+.dl-menuwrapper button:hover, .dl-menuwrapper button.dl-active{
+  background: none;
+  opacity: 1;
+}
+.dl-menuwrapper .dl-menu{
+  width: 300px;
+  height: auto;
+  margin-left: -250px;
+  background-color: #F3F0EA;
+  box-shadow: 0px 1px 3px rgba(34,50,24,0.6);
+}
+#dl-menu li{
+  float: none;
+}
+#dl-menu li a{
+  color: #856727;
+  font-size: 13px;
+}
+#dl-menu li a.active{
+  background-color: #E6E0D4;
+  font-weight: bold
+}
+#dl-menu li a:hover{
+  background-color: #E6E0D4;
+}
+.sub-header{
+  height: 160px;
+  width: 100%;
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(top, #558536 0%, #95C530 100%);
+  /* Opera */
+  background-image: -o-linear-gradient(top, #558536 0%, #95C530 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #558536), color-stop(1, #95C530));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(top, #558536 0%, #95C530 100%);
+  /* W3C Markup, IE10 Release Preview */
+  background-image: linear-gradient(to bottom, #558536 0%, #95C530 100%);
+}
+.sub-header h1{
+  color: #fff;
+  font-size: 30px;
+  padding-top: 50px;
+  text-shadow: 1px 2px 2px rgba(52,85,43,0.8);
+}
+.main-content{
+  padding-top: 30px;
+}
+.main-content .left-content, .main-content .right-content{
+  float: left;
+}
+.main-content .right-content{
+  margin-left: 40px;
+}
+.main-content .left-content.sidebar{
+  width: 240px;
+}
+.main-content .right-content.main{
+  width: 700px;
+}
+.sidebar-nav{
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(top, #856727 0%, #6A511F 100%);
+  /* Opera */
+  background-image: -o-linear-gradient(top, #856727 0%, #6A511F 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #856727), color-stop(1, #6A511F));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(top, #856727 0%, #6A511F 100%);
+  /* W3C Markup, IE10 Release Preview */
+  background-image: linear-gradient(to bottom, #856727 0%, #6A511F 100%);
+  border-radius: 6px;
+  padding: 10px;
+  box-shadow: 0px 1px 3px rgba(34,50,24,0.6);
+}
+.sidebar-nav .nav-link{
+  color: rgba(255,255,255,1);
+  display: block;
+  padding: 14px 35px;
+  margin-bottom: 6px;
+  background-color: rgba(255,255,255,0.1);
+  position: relative;
+}
+.sidebar-nav .nav-link img{
+  position: absolute;
+  width: 20px;
+  left: 8px;
+  top: 12px;
+}
+.box{
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(34,50,24,0.6);
+  margin-bottom: 20px;
+}
+.title-back{
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(top, #EDCA2F 0%, #EDCA2F 50%, #DDBE34 50.1%, #DDBE34 100%);
+  /* Opera */
+  background-image: -o-linear-gradient(top, #EDCA2F 0%, #EDCA2F 50%, #DDBE34 50.1%, #DDBE34 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #EDCA2F), color-stop(0.5, #EDCA2F), color-stop(0.501, #DDBE34), color-stop(1, #DDBE34));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(top, #EDCA2F 0%, #EDCA2F 50%, #DDBE34 50.1%, #DDBE34 100%);
+  /* W3C Markup, IE10 Release Preview */
+  background-image: linear-gradient(to bottom, #EDCA2F 0%, #EDCA2F 50%, #DDBE34 50.1%, #DDBE34 100%);
+}
+.title-back .title{
+  color: #fff;
+}
+.title-back h2{
+  font-size: 18px;
+  padding: 6px 17px;
+}
+.box-content{
+  padding: 20px 17px;
+}
+.footer{
+  height: 150px;
+  width: 100%;
+  margin-top: 30px;
+  padding-top: 15px;
+  background-color: #e3ead8;
+  box-shadow: 0px 2px 5px rgba(34,50,24,0.1) inset;
+  position: absolute;
+}
+.footer .content{
+  position: relative;
+  height: 100%;
+}
+.footer .footer-info{
+  color: #777;
+  padding: 8px 0px;
+}
+.footer .footer-info strong, .footer .footer-info .info{
+  float: left;
+}
+.footer .footer-info strong{
+  width: 180px;
+  display: block;
+}
+.copyright{
+  text-align: center;
+  color: #999;
+  width: 100%;
+  bottom: 10px;
+  position: absolute;
+}
+@media(max-width: 1000px){
+  .content{
+    width: auto;
+  }
+  .top-nav ul{
+    width: 100%;
+  }
+  .sub-header h1{
+    padding-left: 30px;
+  }
+  .main-content{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .main-content .left-content.sidebar{
+    width: 26%;
+  }
+  .main-content .right-content.main{
+    width: 70%;
+    margin-left: 0px;
+    float: right;
+  }
+  .footer .footer-info{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media(max-width: 850px){
+  .top-nav li.list-border, .top-nav li .nav-link{
+    display: none;
+  }
+  #dl-menu{
+    display: block;
+  }
+  .main-content .left-content.sidebar{
+    float: none;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .main-content .right-content.main{
+    float: none;
+    width: 100%;
+  }
+}
+@media(max-width: 600px){
+  .main-content{
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+  .top-nav{
+    position: fixed !important;
+    width: 100%;
+    top: 0;
+    box-shadow: 0px 2px 3px rgba(52,85,43,0.8);
+    z-index: 9999;
+  }
+  .sub-header{
+    margin-top: 60px;
+  }
+  .footer{
+    height: auto;
+  }
+  .footer .footer-info strong, .footer .footer-info .info{
+    float: none;
+    font-size: 13px;
+  }
+  .copyright{
+    position: inherit;
+    bottom:0;
+    margin: 15px 0px;
+    font-size: 11px;
+  }
+}
+@media(max-width: 500px){
+  .top-nav .nav-logo{
+    width: auto;
+    padding: 0;
+    height: 60px;
+  }
+  .top-nav li.logo img{
+    width: 110px;
+    margin-top: 18px;
+    margin-left: 15px;
+  }
+  .dl-menuwrapper button{
+    width: 40px;
+    height: 40px;
+  }
+  .sub-header{
+    height: 130px;
+  }
+  .sub-header h1{
+    font-size: 24px;
+  }
+}
