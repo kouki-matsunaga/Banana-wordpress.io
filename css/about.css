@@ -1,0 +1,52 @@
+.main-content .left-content{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+}
+#ideal .box-content .motto{
+  font-size: 25px;
+  margin: 20px 0px;
+  color: #95c530;
+  font-weight: bold;
+}
+#ideal .box-content p{
+  padding: 0px 60px;
+  line-height: 1.8;
+}
+#aboutus .box-content{
+  padding: 20px 28px 35px;
+}
+#aboutus .box-content table{
+  width: 100%;
+  border-collapse: collapse;
+}
+#aboutus .box-content th{
+  padding: 15px 10px;
+  text-align: left;
+  border-bottom: 1px dashed #95c530;
+}
+#aboutus .box-content td{
+  padding: 15px 0px;
+  border-bottom: 1px dashed #95c530;
+}
+
+@media(max-width: 850px){
+  .main-content .left-content{
+    position: static;
+  }
+}
+@media(max-width: 500px){
+  #ideal .box-content .motto{
+    font-size: 22px;
+  }
+  #ideal .box-content p{
+    padding: 0px 10px;
+  }
+  #aboutus .box-content{
+    padding: 20px 20px 35px;
+  }
+  #aboutus .box-content th{
+    padding: 15px 10px 15px 0px;
+    font-size: 12px;
+  }
+}

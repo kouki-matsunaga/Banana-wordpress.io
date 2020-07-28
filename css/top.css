@@ -1,0 +1,142 @@
+.top-head{
+  height: 300px;
+  width: 100%;
+  background: url(../img/top.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.top-head h1{
+  color: #fff;
+  font-size: 60px;
+  padding-top: 70px;
+  margin-left: 30px;
+  text-shadow: 1px 2px 2px rgba(52,85,43,0.8);
+}
+.main-content .left-content{
+  width: 700px;
+}
+.main-content .right-content{
+  width: 240px;
+}
+.main-content .right-content .ad{
+  border: 5px solid #EDCA2F;
+  margin-bottom: 20px;
+  box-shadow: 0px 1px 3px rgba(34,50,24,0.6);
+  box-sizing: border-box;
+}
+.main-content .right-content .ad img{
+  width: 100%;
+  display: block;
+}
+.title-back h3{
+  font-size: 16px;
+  padding: 6px 17px;
+}
+.box-large .box-content{
+  height: 250px;
+  overflow: scroll;
+}
+.box-large .box-content ul li{
+  margin-bottom: 20px;
+}
+.box-large .box-content ul li .date{
+  color: #999;
+}
+.box-large .box-content ul li .category a{
+  background-color: #90bc35;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  margin: 0px 10px;
+}
+.box-small{
+  width: 330px;
+  height: 350px;
+  margin-bottom: 40px;
+  float: left;
+}
+.box-small.about{
+  margin-right: 20px;
+}
+.box-small.service{
+  margin-left: 20px;
+}
+.box-small .box-content img{
+  width: 100%;
+  border-radius: 4px;
+}
+@media(max-width: 1000px){
+  #top .left-content{
+    width: 70%;
+  }
+  #top .left-content .box-small{
+    width: 48%;
+    margin-right: 0px;
+  }
+  #top .left-content .box-small.service{
+    float: right;
+  }
+  #top .right-content{
+    width: 26%;
+    margin-left: 0px;
+    float: right;
+  }
+}
+@media(max-width: 850px){
+  #top .left-content{
+    width: 100%;
+  }
+  #top .left-content .box-small{
+    height: 390px;
+  }
+  #top .right-content{
+    width: 100%;
+  }
+  #top .right-content .ad{
+    width: 48%;
+    float: left;
+  }
+  #top .right-content .ad:nth-child(2n){
+    float: right;
+  }
+}
+@media(max-width: 600px){
+  .top-head{
+    margin-top: 60px;
+    height: 200px;
+  }
+  .top-head h1{
+    font-size: 38px;
+  }
+  .newsfeed{
+    margin-bottom: 40px;
+  }
+  #top .left-content .box-small{
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+}
+@media(max-width: 500px){
+  .box-content ul li{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+  }
+  .box-content ul li .date{
+    font-size: 12px;
+  }
+  .box-content ul li .tag a{
+    font-size: 11px;
+  }
+  .box-content ul li .text{
+    display: block;
+    margin-top: 8px;
+  }
+  #top .right-content .ad{
+    float: none;
+    width: 100%;
+  }
+}
